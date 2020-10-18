@@ -49,7 +49,7 @@ public MovieInfo getMoviesById(int movieId){
 //    String URL = "https://api.themoviedb.org/3/movie/" + movieId + "?api_key=" + apiKey;
 //    System.out.println(URL);
      theMovieInfo = restTemplate.getForObject("https://api.themoviedb.org/3/movie/" + movieId + "?api_key=" + apiKey, MovieInfo.class);
-//     System.out.println(theMovieInfo);
+
      return theMovieInfo;
 }
 
