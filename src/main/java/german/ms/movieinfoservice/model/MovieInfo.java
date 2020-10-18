@@ -1,9 +1,14 @@
 package german.ms.movieinfoservice.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class MovieInfo {
 
+    @JsonProperty (value = "id")
     private int movieId;
+    @JsonProperty (value = "original_title")
     private String name;
+    @JsonProperty (value = "overview")
     private String desc;
 
     public MovieInfo(int movieId, String name, String desc) {
